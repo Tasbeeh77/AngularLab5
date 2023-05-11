@@ -1,5 +1,5 @@
 /* CSS Document */
-
+@import "../node_modules/bootstrap/dist/css/bootstrap.css";
 /*PAGE LAYOUT*/
 body {
 	margin-left: 0px;
@@ -12,16 +12,14 @@ body {
 #toplinks{position:absolute; right:10px; top:10px;}
 #menu{float:right; width:526px; height:32px; background-image:url(./assets/bg_menu.gif); background-repeat:repeat-x;}
 #submenu{float:right; width:526px; height:32px; background-image:url(./assets/bg_submenu.gif); background-position:top; background-repeat:repeat-x;}
-#contenttext{float:right; width:526px;}
-#leftpanel{float:left; width:274px;}
+/* #contenttext{float:right; width:526px;}
+#leftpanel{float:left; width:274px;} */
 #footer{float:left; width:800px; background-color:#F0F0F0; padding:10px;}
 
-/*GRAY PANEL*/
 .graypanel{
 	border:solid 1px #666666; background-color:#F7F7F7; padding:10px; margin:10px;
 }
 
-/*TEXT STYLES*/
 .bodytext {
 	font: 0.7em Tahoma, sans-serif;
 	color: #666666;

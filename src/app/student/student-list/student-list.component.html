@@ -1,0 +1,27 @@
+<app-add-student (onStudentAdd)="AddStudent($event)"></app-add-student>
+
+<div class="table-responsive">
+    <table class="table">
+        <thead>
+            <tr>
+                <td>#</td>
+                <th >Id</th>
+                <th >Name</th>
+                <th >Age</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="" *ngFor="let item of students;let i=index;let f=odd" >
+                <td>{{f}}</td>
+                <td > {{item.id}}</td>
+                <td>{{item.name}}</td>
+                <td>{{item.age}}</td>
+                <td>
+                    <button (click)="ShowDetails(item.id)">Details</button>
+                </td>
+            </tr> 
+        </tbody>
+    </table>
+</div>
+<app-student-details [studentDetails]="dstd" *ngIf="detailsFlag" (onHide)="detailsFlag=$event"></app-student-details>

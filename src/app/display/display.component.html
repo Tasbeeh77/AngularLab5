@@ -1,0 +1,44 @@
+Title
+<hr>
+<input #t7 [value]="title" ((keyup))="title=t7.value">{{title}}
+<input [(ngModel)]="title">
+<hr>
+
+
+{{std.id}} :{{std.name}} :{{std.age}}
+<button (click)="save(t2.value)">save</button>
+<button (click)="name=t2.value">save2</button>
+
+<input #t2 type="text">
+
+
+<input #t1 type="text" (blur)="changename($event.target)" (keyup.enter)="changename($event.target)">{{name}}
+
+
+<button #b1 (click)="myfun()"> show</button>{{id}}
+
+
+<hr>
+
+<input type="text" [disabled]="!flag">
+<div #d1 [innerText]="name">
+
+</div>
+
+<hr>
+
+<h1>
+    {{name +' ahmed'}} {{1+1}}
+</h1>
+
+<input type="text" [value]="name">
+<img [src]="imgsrc" [alt]="name">
+<table border="2">
+    <tr>
+        <td>Id</td>
+        <td>name</td>
+    </tr>
+    <tr>
+        <td [attr.colspan]="n">ssd</td>
+    </tr>
+</table>

@@ -1,22 +1,28 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { CoreModule } from './core/core.module';
 import { AppComponent } from './app.component';
-import { StudentComponent } from './Student/Student.Component';
-import { DepartmentComponent } from './department/department.component';
-import { HeaderComponent } from './header/header.component';
-import { ContentComponent } from './content/content.component';
-import { FooterComponent } from './footer/footer.component';
-import { SidebarComponent } from './sidebar/sidebar.component';
+import { StudentModule } from './student/student.module';
+import { FormsModule } from '@angular/forms';
+import { DepartmentModule } from './department/department.module';
+import { ContactusComponent } from './contactus/contactus.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
+import { HomeComponent } from './home/home.component';
+import { ErrorComponent } from './error/error.component';
+import { CourseModule } from './course/course.module';
+import { AppRoutingModule } from './app-routing.module';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
-    AppComponent, StudentComponent,
-    DepartmentComponent, FooterComponent, 
-    HeaderComponent, SidebarComponent, ContentComponent
+    AppComponent,
+    ContactusComponent,
+    AboutusComponent,
+    HomeComponent,
+    ErrorComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,CoreModule,HttpClientModule,StudentModule,FormsModule,DepartmentModule,CourseModule,AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
